@@ -152,6 +152,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('keystoreSameera.jks')
+            storePassword 'Cha2560173'
+            keyAlias 'keyAliasSameera'
+            keyPassword 'Cha2560173'
+        }
     }
     buildTypes {
         debug {

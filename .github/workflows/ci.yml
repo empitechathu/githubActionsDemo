@@ -1,12 +1,10 @@
 name: Build Android and IOS
-
 on:
   push:
     branches:
       - master
-
 jobs:
-  install-and-test:
+  install:
     runs-on: ubuntu-latest
     steps:
       - user: actions/checkout@v2
