@@ -16,7 +16,7 @@ jobs:
 
       - name: Assemble Release Bundle
         run: |
-          ./gradlew bundleRelease
+          cd android && ./gradlew bundleRelease
 
       - name: Sign Release
         uses: r0adkll/sign-android-release@v1
