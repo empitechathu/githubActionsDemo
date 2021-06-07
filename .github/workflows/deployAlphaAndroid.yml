@@ -21,7 +21,7 @@ jobs:
       - name: Sign Release
         uses: r0adkll/sign-android-release@v1
         with:
-          releaseDirectory: app/build/outputs/apk/release
+          releaseDirectory: android/app/build/outputs/bundle/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
@@ -42,6 +42,6 @@ jobs:
         with:
           serviceAccountJson: service_account.json
           packageName: com.githubactionsdemo
-          releaseFile: app/build/outputs/apk/release/app-release.aab
+          releaseFile: android/app/build/outputs/bundle/release/app-release.aab
           track: alpha
           whatsNewDirectory: distribution/
